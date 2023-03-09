@@ -1,0 +1,12 @@
+mat-error{
+ font-size: 12px;
+}
+
+.signupButton button{
+  background-color: var(--color2);
+  color: var(--color4);
+}
+
+mat-form-field{
+  width: 99%;
+}

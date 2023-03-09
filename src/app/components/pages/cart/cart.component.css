@@ -1,0 +1,42 @@
+.bg-grey {
+  background-color: #eae8e8;
+}
+
+.btnsLayout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.btnsLayout button {
+  margin: 5px;
+}
+
+@media(max-width:769px){
+  .cancelIcon{
+    position: absolute;
+    top: 0px;
+  }
+}
+
+.cancelIcon i:hover {
+  cursor: pointer;
+}
+
+.bk_img{
+  height: 180px;
+  width: 150px;
+}
+
+/* remove arrow from input type number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

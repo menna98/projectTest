@@ -1,0 +1,53 @@
+<div class="signupForm shadow">
+
+  <form [formGroup]="signupForm">
+
+    <div class="nameInput py-1">
+      <mat-form-field appearance="outline" class="">
+        <mat-label>Enter your name</mat-label>
+        <input #nameInput matInput placeholder="name should be 3 - 20 characters" formControlName="name">
+        <mat-error *ngIf="nameNotValid">{{nameNotValid}}</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="emailInput py-1">
+      <mat-form-field appearance="outline" class="">
+        <mat-label>Enter your email</mat-label>
+        <input #emailInput matInput placeholder="example@aaa.aaa" formControlName="email">
+        <mat-error *ngIf="emailNotValid">{{emailNotValid}}</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="passwordInput pb-3">
+      <mat-form-field appearance="outline" class="">
+        <mat-label>Enter your password</mat-label>
+        <input #passwordInput [type]="hide ? 'password' : 'text'" matInput placeholder="password should be 8 - 16 characters" formControlName="password">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+        <mat-error *ngIf="passwordNotValid">{{passwordNotValid}}</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field appearance="outline" class="">
+        <mat-label>Gender</mat-label>
+        <mat-select formControlName="gender">
+          <mat-option *ngFor="let g of genders" [value]="g.value">
+            {{g.value}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="text-center my-2">
+      <div class="text-start my-1">please insert your personal photo</div>
+      <input class="form-control" type="file" (change)="getPhoto($event)" accept="image/*" formControlName="photo">
+    </div>
+
+    <div class="signupButton text-center py-2">
+      <button matInput type="submit" mat-raised-button (click)="signUp()" color="primary">Signup</button>
+    </div>
+
+  </form>
+</div>

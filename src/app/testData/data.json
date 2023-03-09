@@ -1,0 +1,32 @@
+{
+  "students": [
+    {
+      "name": "mostafa",
+      "email": "mostafa@gmail.com",
+      "password": "mostafa",
+      "gender": "male",
+      "photo": "file"
+    },
+    {
+      "name": "mostafa",
+      "email": "ahmed@gmail.com",
+      "password": "mostafa",
+      "gender": "male",
+      "photo": "file"
+    },
+    {
+      "name": "mostafa",
+      "email": "ahmed@gmail.com",
+      "password": "mostafa",
+      "gender": "male",
+      "photo": "file"
+    },
+    {
+      "name": "mostafa",
+      "email": "ahmed@gmail.com",
+      "password": "mostafa",
+      "gender": "male",
+      "photo": "file"
+    }
+  ]
+}

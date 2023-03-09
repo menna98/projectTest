@@ -1,0 +1,28 @@
+  <div class="loginForm shadow px-2">
+    <form [formGroup]="loginForm">
+
+      <div class="emailInput">
+        <mat-form-field appearance="outline" class="w-100 py-3">
+          <mat-label>Enter your email</mat-label>
+          <input matInput placeholder="example@aaa.aaa" formControlName="email">
+          <mat-error *ngIf="emailValid">{{emailValid}}</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="passwordInput">
+        <mat-form-field appearance="outline" class="w-100 py-3">
+          <mat-label>Enter your password</mat-label>
+          <input [type]="hide ? 'password' : 'text'" matInput placeholder="password should be 8 - 16 characters" formControlName="password">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+          <mat-error *ngIf="passwordValid">{{passwordValid}}</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="loginButton text-center py-3">
+        <button type="submit" (click)="sendUserData()" mat-raised-button color="primary">Login</button>
+      </div>
+
+    </form>
+  </div>

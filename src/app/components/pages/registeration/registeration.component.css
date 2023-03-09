@@ -1,0 +1,23 @@
+#main{
+  background-image: url(../../../../assets/background.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#card{
+  width: 28vw;
+  min-width: 400px;
+  height: fit-content;
+  background-color: var(--color4);
+  margin: 0.5rem 35%;
+}
+
+@media screen and (max-width: 992px){
+  #card{
+    margin: 0.5rem auto;
+    min-width: 350px;
+  }
+}

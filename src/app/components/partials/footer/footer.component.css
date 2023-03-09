@@ -1,0 +1,21 @@
+.footer{
+  background-color: var(--color1);
+  color: var(--color4);
+  width: 100%;
+  height: fit-content;
+}
+
+hr{
+  color: white;
+  width: 80%;
+}
+.icons i{
+  font-size: 20px;
+  margin: 5px;
+}
+*{
+  margin: 0;
+}
+.last{
+  padding:.5% 0px;
+ }

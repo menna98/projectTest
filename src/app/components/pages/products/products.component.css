@@ -1,0 +1,172 @@
+/* page layout */
+.mainCont{
+  background-color: var(--color4);
+}
+.layout{
+  width: 90%;
+  margin: 10px auto 0;
+  display: flex;
+  gap: 1%;
+}
+
+.layout .column1{
+  width: 25%;
+}
+
+.layout .column2{
+  width: 70%;
+  margin-bottom: 20px;
+  color: var(--color2);
+}
+/* End */
+
+/* search bar */
+.searchB{
+  padding: 30px;
+  margin: 0 auto;
+  width: 70%;
+}
+.searchB .btn:hover{
+  color: white;
+}
+.btn-outline:hover {
+  background-color: var(--color2);
+}
+.btn-outline{
+  border-color: var(--color3);
+  color: var(--color1);
+}
+/* End */
+
+/* side bar */
+button.contain{
+  border: none;
+}
+
+.column1 a
+{
+  color: var(--color4);
+  background-color: var(--color2);
+}
+.column1 a:hover{
+  background-color: var(--color1);
+}
+.T{
+  background-color: var(--color1) !important;
+  border: none !important;
+}
+
+/* card details */
+.card-img-top{
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.btn-primary{
+  color: var(--color4);
+  background-color: var(--color2);
+  border: none;
+}
+.btn-primary:hover{
+  background-color: var(--color1);
+}
+
+input[type="search"]{
+  outline: none;
+  border-color: var(--color3);
+}
+input[type="search"]:focus{
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px var(--color1);
+}
+
+.btnsL{
+  gap: 5px;
+}
+
+/* this is last add  */
+
+.icon-hover:hover {
+  border-color: #3b71ca !important;
+  background-color: white !important;
+}
+
+.icon-hover:hover i {
+  color: #3b71ca !important;
+}
+
+
+
+/* ///////////////////////////////feed backs design//////////////////// */
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #cd9cf2;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to top left, rgba(205, 156, 242, 1), rgba(246, 243, 255, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to top left, rgba(205, 156, 242, 1), rgba(246, 243, 255, 1))
+  }
+
+.highlight{
+color: gray;
+}
+  .my-pagination ::ng-deep .ngx-pagination .current {
+    background: var(--color1);
+    text-align: center;
+    border-radius: 5px;
+    color: var(--color4);
+    padding: 1%;
+  }
+
+  .my-pagination ::ng-deep .ngx-pagination  {
+    text-align: center;
+    border-radius: 10px;
+    padding: 1%;
+    margin: auto;
+  }
+
+  .Feedbacks{
+    border: 1px solid;
+    border-color: rgb(217, 214, 214);
+    padding: 10px;
+    border-radius: 7px;
+    margin: 5px;
+  }
+.feedbacklabel{
+  color: var(--color1);
+}
+
+.onefeedback{
+  background-color: rgb(251, 251, 251);
+}
+
+#class{
+ background-color: white;
+ margin-left: 9%;
+}
+
+.cat:hover{
+  cursor: pointer;
+}
+
+.column1{
+  margin-bottom: 200px;
+}
+
+.spinner-grow{
+  color: var(--color1);
+  width: 3rem;
+  height: 3rem;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+}
+
+@media (max-width:995px){
+  .column1{
+    margin-bottom: 0px;
+  }
+}

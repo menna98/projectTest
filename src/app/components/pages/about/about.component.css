@@ -1,0 +1,26 @@
+div.container{
+  background-image: url('../../../../assets/background.jpg');
+  min-height : 100%;
+  min-width : 100%;
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  overflow: hidden;
+}
+.textContent{
+  font-size: 1.5rem;
+  line-height: 1.5;
+  height: fit-content;
+  padding: 50px;
+}
+
+@media(min-width:1030px){
+  .txt{
+    margin: 80px 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .textContent{
+    font-size: 15px;
+  }
+}

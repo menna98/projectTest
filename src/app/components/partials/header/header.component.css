@@ -1,0 +1,28 @@
+.header-container{
+  position: relative;
+  background-color: var(--color1);
+  padding: 0;
+  border-bottom: 1px solid var(--color2);
+  z-index: 10;
+}
+
+.header *{
+  color: var(--color4);
+}
+
+li a:hover{
+  background-color: var(--color2);
+}
+
+.header-container{
+  min-height: 75px;
+}
+
+.user-dropdown{
+  background-color: var(--color1);
+}
+
+#userimg{
+  height: 40px;
+  border-radius: 50%;
+}
